@@ -1,0 +1,136 @@
+@charset "UTF-8";
+html,body,article{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width:1260px;
+}
+main{
+    margin-bottom: 100px;
+}
+main>h1{
+    width: 431px;
+    height: 35px;
+    margin:34px auto 50px;
+    background:url("../imgs/sprites_0.png") ;
+}
+.content{
+    width: 1240px;
+    margin:0 auto;
+}
+/*第一行*/
+ main section{
+    font-size: 0;
+}
+main section:first-child{
+    width: 100%;
+    height: 388px;
+    position: relative;
+}
+main section>div{
+    display: inline-block;
+}
+/*图片幻灯片*/
+.img_cols-sd{
+    position: relative;
+    width: 812px;
+    height: 388px;
+    overflow: hidden;
+}
+.img_cols-sd>img{
+    position: absolute;
+    transition: transform 2s linear;
+}
+/*第一行第二个*/
+.img_cols-ss{
+    width: 388px;
+    height: 388px;
+}
+.ml-38{
+    margin-left: 38px;
+}
+.mt-38{
+    margin-top: 38px;
+}
+/*小圆点*/
+.slideList-point{
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+}
+.slideList-point>span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-right: 12px;
+}
+.ckd{
+    background: #fff;
+}
+.scale {
+    transform: scale(1.1);
+}
+/*第二行*/
+ main section:nth-child(2){
+    width: 100%;
+    height: 814px;
+}
+section:nth-child(2) img{
+    border:1px solid #bfbfbe;
+}
+.img_cols-ds{
+    width: 388px;
+    height: 814px;
+}
+/*第三行*/
+ main section:last-child{
+    width: 100%;
+    height: 388px;
+    /*background: #000;*/
+    box-sizing: border-box;
+}
+.img_style-sd{
+    width: 812px;
+    height: 388px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.img_style-sd img{
+    width: 100%;
+    height: 100%;
+}
+ main section:last-child img{
+    border:1px solid #bfbfbe;
+}
+.solid{
+    border: 1px solid #bfbfbe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

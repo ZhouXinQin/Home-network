@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../stylesheets/header&footer.css">
+    <link type="text/css" href="../stylesheets/shopping.css" rel="stylesheet">
+</head>
+<body>
+<!--header-->
+<header></header>
+<!--content-->
+<main class="content">
+<!--我的购物车{-->
+    <div class="shopping-cart">
+        <h2>我的购物车</h2>
+        <div class="sc-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="trea_ckd">
+                            <input name="treasure" type="checkbox" checked>
+                            <i class="allCkd ckb_custom a"></i>
+                        </th>
+                        <th class="w-320">商品信息</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>金额</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <!--js动态生成数据-->
+                </tbody>
+            </table>
+            <!--结算栏{-->
+            <div class="sc-payBar">
+                <!--left-->
+                <div class="sc-payBar-left">
+                    <div>
+                        <input name="treasure" type="checkbox" checked>
+                        <i class="allCkd ckb_custom b"></i>
+                        <span>全选</span>
+                    </div>
+                    <div>已选商品<span class="trea_count_sum">0</span>件</div>
+                </div>
+                <!--right-->
+                <div class="sc-payBar-right">
+                    <div class="mr-160">
+                        <p class="pos_-t2">
+                            <span class="plusFont va_m">合计</span>
+                            (不含运费):
+                        </p>
+                        <span class="monney">0.00</span>
+                    </div>
+                    <button type="button" class="gotoPay">去结算</button>
+                </div>
+            </div>
+            <!--结算栏}-->
+        </div>
+    </div>
+    <!--我的购物车}-->
+    <!--推荐商品-->
+    <div class="rcmdComod">
+        <h2>推荐商品</h2>
+        <!-- 推荐商品展示区 -->
+        <ul class="rcmdComod-show">
+           <li class="comodshow ml-0">
+               <div>
+                   <img src="../imgs/example_3.jpg">
+               </div>
+               <p>
+               <span>产品名称</span>
+               <span class="price">￥680</span>
+               </p>
+           </li>
+            <li class="comodshow">
+               <div>
+                   <img src="../imgs/example_4.jpg">
+               </div>
+                <p>
+                    <span>产品名称</span>
+                    <span class="price">￥680</span>
+                </p>
+           </li>
+            <li class="comodshow ml-0">
+               <div>
+                   <img src="../imgs/example_5.jpg">
+               </div>
+                <p>
+                    <span>产品名称</span>
+                    <span class="price">￥680</span>
+                </p>
+           </li>
+        </ul>
+
+    </div>
+
+</main>
+<!--footor-->
+<footer></footer>
+
+
+<!--弹出框-->
+<div class="maskLayer"></div>
+
+<!--结算弹出框-->
+<div class="success">
+    <div class="success_A">
+        <p>您共支付:￥<span class="priceData">0</span>元</p>
+        <p>支付成功！</p>
+        <button type="button" id="btn">查看订单信息</button>
+    </div>
+</div>
+
+<script src="../jquery/jquery.js" type="text/javascript"></script>
+<script src="../javascript/header&footer.js" type="text/javascript"></script>
+<script src="../javascript/shopping.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "微软雅黑";
+    color: #333;
+    background: #fff;
+    min-width: 1200px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 296px;
+    position: relative;
+}
+/*content*/
+main{
+    margin-bottom: 100px;
+}
+.shopping-cart i.ckb_custom{
+    background-position: -412px -100px;
+}
+.shopping-cart i.ckb{
+    background-position: -412px -73px;
+}
+/*我的购物车*/
+.shopping-cart{
+    width: 1240px;
+    height: auto;
+    margin: 15px auto 0;
+}
+.shopping-cart h2,.rcmdComod h2{
+    font-size: 20px;
+    text-align: left;
+}
+.sc-content{
+    width: 1156px;
+    height: auto;
+    margin: 16px auto 0;
+}
+.sc-content table{
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.sc-content table tr{
+    border: 1px solid #ccc;
+}
+.sc-content table .trea_ckd{
+    width: 80px;
+    text-align: center;
+}
+.sc-content table .trea_ckd input,.sc-content .sc-payBar input{
+    display: none;
+}
+ table .trea_ckd i, .sc-payBar i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../imgs/sprites_0.png) no-repeat;
+    /*background-position: -413px -101px;*/
+}
+ table i.allCkd ,i.allCkd,table i.i_trea {
+     background-position: -412px -46px;
+ }
+ .sc-content table th{
+    font: normal 18px/50px "微软雅黑";
+}
+.sc-content table td{
+    padding: 10px;
+    color: #888;
+}
+.sinToPrice{
+    position: absolute;
+    margin-top: 31px;
+}
+.sc-content table th{
+    padding: 0 10px;
+}
+.sc-content table .w-320{
+    padding-right: 116px;
+}
+.sc-content .tren_info > div, .orderForm-info .tren_info > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.sc-content tbody img{
+    display: block;
+    width: 78px;
+    height: 52px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+.sc-content .tren_info p{
+    width: 100px;
+    padding: 10px 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+.sc-content .tren_info p a{
+    color: #888;
+}
+.sc-content .tren_info p a:hover{
+   text-decoration: underline;
+}
+.sc-content .tren_info .disc_info p{
+    width: 140px;
+    line-height: 22px;
+    padding: 0;
+    text-align: left;
+}
+.sc-content .trea_count input[type='text']{
+    width: 36px;
+    height: 26px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #cccbca;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #666;
+    transition:  all 0.3s;
+}
+.sc-content .trea_count button{
+    display: inline-block;
+    color: #333;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: none;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+.sc-content table td a{
+    color: #666;
+    cursor: pointer;
+}
+.sc-content table td a:hover{
+    color: #d8170e;
+    text-decoration: underline;
+}
+/*结算栏*/
+.sc-payBar{
+    width:1156px;
+    height: 54px;
+    line-height: 54px;
+    background-color: #dededd;
+    position: relative;
+    margin: 28px auto 0;
+}
+/*left*/
+.sc-payBar-left > div, .sc-payBar-left > div span{
+    display: inline-block;
+}
+.sc-content .sc-payBar i{
+    position: relative;
+    top: 2px;
+    margin-left: 34px;
+}
+.sc-payBar-left .trea_count_sum{
+    font-size: 20px;
+    color: #d8170e;
+    padding: 0 2px;
+}
+/*right*/
+.sc-payBar-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sc-payBar-right > div, .sc-payBar-right > div > p{
+    display: inline-block;
+}
+.sc-payBar-right > div.mr-160{
+    margin-right: 160px;
+}
+.sc-payBar-right > div span.plusFont{
+    font-size: 20px;
+}
+.sc-payBar-right > div span.monney{
+    font-size: 22px;
+    color: #d8170e;
+    margin-left: 8px;
+}
+.sc-payBar-right  .gotoPay{
+    width: 138px;
+    height: 54px;
+    background: #da251d;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.sc-payBar-right .gotoPay:hover{
+    background-color: #ea4d46;
+}
+/*推荐商品*/
+.rcmdComod{
+    margin: 180px auto 0;
+    width: 1240px;
+}
+.rcmdComod h2{
+    text-indent: 32px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #ccc;
+}
+/*商品展示区*/
+.rcmdComod-show{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+.rcmdComod-show > .comodshow div{
+    width: 390px;
+    height: 390px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.rcmdComod-show > .comodshow div img{
+     width: 100%;
+    height: 100%;
+}
+.rcmdComod-show > .comodshow p{
+    text-align: center;
+    margin-top: 10px;
+}
+.rcmdComod-show > .comodshow p span{
+    font-size: 17px;
+    display: inline-block;
+}
+.rcmdComod-show > .comodshow p span.price{
+    font-size: 22px;
+    margin-left: 36px;
+}
+
+
+/*弹出框*/
+.maskLayer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(100, 95, 96, 0.22);
+    display: none;
+}
+.maskLayer > div {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateY(-50%) translateX(-50%) ;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.maskLayer > div > h2{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.maskLayer > div > p:nth-child(3){
+    margin-top: 20px;
+    text-align: center;
+}
+.maskLayer > div > p:nth-child(2){
+    margin: 40px 0;
+}
+.maskLayer > div > p:nth-child(3) > button{
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #838281;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+.maskLayer > div > p:nth-child(3) > button:hover{
+    background: #82c353;
+}
+.sureDeleThisOrder{
+    margin-right: 20px;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    background: #f0f2f3;
+    margin-top: 72px;
+}
+
+/*结算弹出框*/
+.success{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    background: rgba(168, 168, 168, 0.49);
+    z-index: 999;
+    font-size: 22px;
+    text-align: center;
+    display: none;
+}
+.success_A{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) ;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    letter-spacing: 4px;
+}
+.success_A p,.success_A button{
+    margin: 20px 40px;
+}
+.success_A button{
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    color: #fff;
+    background: #0d6e00;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.success_A button:hover{
+    opacity: 0.8;
+}
+.priceData{
+    color: #17cd00;
+    letter-spacing: 1px;
+}

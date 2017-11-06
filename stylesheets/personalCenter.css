@@ -1,0 +1,583 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "微软雅黑";
+    color: #333;
+    background: #fff;
+    min-width: 1200px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+    /*header*/
+header{
+    width: 100%;
+    height: 296px;
+    position: relative;
+}
+/*content*/
+.content{
+    margin-bottom: 100px;
+}
+/*个人信息查看及设置 */
+.pesnInfo{
+    width: 1240px;
+    padding: 25px;
+    margin: 0 auto;
+}
+/*个人信息——板块选择*/
+.pesnInfo-choose{
+    width: 1190px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+}
+.pesnInfo-choose ul{
+    display: flex;
+}
+.pesnInfo-choose li{
+    width: auto;
+    line-height: 40px;
+    margin-left: 26px;
+    margin-right: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.pesnInfo-choose li a{
+    padding: 0 10px 5px 0;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    color: #666;
+}
+.pesnInfo-choose li a:hover, .pesnInfo-choose li a.checked{
+    border-color: #de3d36;
+    color: #de3d36;
+}
+.pesnInfo-choose ul li:last-child{
+    position: relative;
+}
+.pesnInfo-choose .math{
+    display: block;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    min-width: 14px;
+    background: #de3d36;
+    padding: 1px;
+    line-height: 14px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    right: -12px;
+    top:-6px;
+    font-style: normal;
+}
+/*个人信息设置*/
+.pesnInfo-set{
+    width: 100%;
+    padding: 30px 26px;
+}
+.pesnInfo-set > form > div{
+    margin-bottom: 20px;
+}
+/*联系人*/
+.pesnInfo-set input{
+    height: 38px;
+}
+.pesnInfo-set input.w-132{
+    width: 132px;
+}
+.pesnInfo-set input[type = 'text']:focus{
+    border:1px solid #82c353;
+    box-shadow: 0 0 10px rgba(130,195,83,0.6);
+}
+.pesnInfo-set label{
+    line-height: 40px;
+    font-size: 18px;
+    display: block;
+}
+input[type="text"]{
+    background: #fff;
+    border: 1px solid #cccbca;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #666;
+    transition: all 0.3s;
+}
+.pesnInfo-set input.w-256{
+    width: 256px;
+}
+/*性别*/
+.pesnInfo-set .sexSelect, .pesnInfo-set .sexSelect label,.pesnInfo-set .sexSelect i{
+    display: inline-block;
+}
+.pesnInfo-set .sexSelect input[type='radio']{
+    display: none;
+}
+.pesnInfo-set .sexSelect i{
+    width: 16px;
+    height: 16px;
+    background: url(../imgs/sprites_0.png) no-repeat;
+}
+.pesnInfo-set .sexSelect .rdo-checked_custom{
+    background-position:-444px -74px;
+}
+.pesnInfo-set .sexSelect i {
+    cursor: pointer;
+}
+.pesnInfo-set .sexSelect .rdo_custom{
+    background-position:-444px -46px; ;
+}
+.pesnInfo-set .sexSelect label{
+    cursor: pointer;
+}
+.pesnInfo-set .sexSelect.ml-46{
+    margin-left: 46px;
+}
+/*生日*/
+.pesnInfo-set form div > ul{
+    min-width: 80px;
+    height: 34px;
+    border: 1px solid #bfbfbe;
+    padding-left: 6px;
+}
+.pesnInfo-set form div > ul{
+    width: 136px;
+    background:#fff ;
+}
+.pesnInfo-set form .year{
+    width: 136px;
+}
+.pesnInfo-set form div > .year >li>ul{
+    width: 136px;
+    background: #fff;
+    border: 1px solid #bfbfbe;
+    z-index: 3;
+    position: absolute;
+    left: -7px;
+}
+.pesnInfo-set form div > ul >li i{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: url(../imgs/sprites_0.png) -329px -44px no-repeat;
+    line-height: 34px;
+}
+.pesnInfo-set form div > ul >li:hover i{
+    background-position: -329px -78px;
+}
+.pesnInfo-set form div > .year >li > span{
+    margin-right: 4px;
+}
+.pesnInfo-set form div > ul >li:hover ul{
+    display: block;
+}
+.pesnInfo-set form div > ul >li li:hover{
+   color: #fff;
+    background: #82c353;
+}
+.pesnInfo-set form  li{
+   padding: 0 10px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+.pesnInfo-set form div > ul li > ul{
+     display: none;
+     max-height: 256px;
+     overflow: auto;
+}
+/*月*/
+.pesnInfo-set form div > ul > li{
+    position: relative;
+}
+.pesnInfo-set form  .month ,.pesnInfo-set form  .day {
+     width: 80px;
+    /*position: relative;*/
+}
+.pesnInfo-set form  .month ul , .pesnInfo-set form  .day ul{
+     width: 80px;
+    border: 1px solid #bfbfbe;
+    background: #fff;
+    position: absolute;
+    z-index: 3;
+    left:-7px;
+}
+.pesnInfo-set form  .month  , .pesnInfo-set form  .day , .pesnInfo-set form  .city  , .pesnInfo-set form  .region ,.pesnInfo-set form  .position {
+    margin-left: 10px;
+}
+/*日*/
+.pesnInfo-set form  .month > li > span, .pesnInfo-set form  .day > li span{
+    margin-right: 10px;
+}
+.pesnInfo-set form > div > ul{
+    display: inline-block;
+}
+/*家居偏好 学历 行业*/
+.pesnInfo-set form  .home , .pesnInfo-set form  .education , .pesnInfo-set form  .industry{
+    width: 180px;
+}
+.pesnInfo-set form  .home  ul, .pesnInfo-set form  .education ul , .pesnInfo-set form  .industry ul{
+    width: 180px;
+    border: 1px solid #bfbfbe;
+    background: #fff;
+    position: absolute;
+    z-index: 3;
+    left:-7px;
+}
+.pesnInfo-set form div ul li ul li {
+    font-size: 14px;
+}
+/*所在地区*/
+.pesnInfo-set form  .province , .pesnInfo-set form  .city  , .pesnInfo-set form  .region  ,.pesnInfo-set form  .position {
+    width: 120px;
+}
+.pesnInfo-set form  .a{
+    margin-right: 23px;
+}
+.pesnInfo-set form  .province  ul, .pesnInfo-set form  .city  ul , .pesnInfo-set form  .region  ul ,.pesnInfo-set form  .position  ul {
+    width: 120px;
+    border: 1px solid #bfbfbe;
+    background: #fff;
+    position: absolute;
+    z-index: 3;
+    left:-7px;
+}
+/*街道门牌号*/
+.pesnInfo-set input.w-557{
+    width: 557px;
+    margin-top: 10px;
+}
+/*提交*/
+ .mt-80{
+    width: 400px;
+    height: 64px;
+    margin: 80px auto 0;
+}
+button.pesnInfo_btn{
+    width: 400px;
+    height: 64px;
+    background: #838281;
+    border: none;
+    text-align: center;
+    font: normal 32px/64px "微软雅黑";
+    color: #fff;
+    cursor: not-allowed;
+    transition: all 0.3s;
+}
+/*我的订单*/
+.base_table.w-1080{
+    width: 1190px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    margin: 38px auto 0;
+}
+.base_table th{
+    font: normal 18px/50px "微软雅黑";
+}
+.base_table tr{
+    border-bottom: 1px solid #ccc;
+}
+.base_table td{
+    padding: 10px;
+    text-align: center;
+    color: #888;
+}
+.base_table .img_info img{
+    width: 78px;
+    height: 52px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+}
+.base_table .img_thumbnail p{
+    padding: 10px 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+.base_table .data_ctrlGroup{
+    width: 146px;
+}
+.base_table .data_ctrlGroup .top, .base_table .data_ctrlGroup .bottom{
+    padding: 5px;
+}
+.base_table .data_ctrlGroup .top{
+    border-bottom: 1px solid #ccc;
+}
+.base_table .data_ctrlGroup a{
+    padding: 4px 10px;
+    cursor: pointer;
+}
+.base_table .data_ctrlGroup a:hover{
+    color: #008edc;
+    text-decoration: underline;
+}
+.base_table .data_ctrlGroup .gapLine_v{
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    border-right: 1px solid #ccc;
+    vertical-align: middle;
+}
+.order .pesnInfo_btn,.message button.pesnInfo_btn{
+    cursor: pointer;
+}
+.order .pesnInfo_btn:hover,.message button.pesnInfo_btn:hover{
+    background-color: #82c353;
+}
+/*个人账户*/
+div.account{
+    width: 1190px;
+    background: #dededd;
+    padding: 20px;
+    margin: 38px auto 0;
+}
+h1{
+    font-size: 22px;
+}
+.account .myScore{
+    margin-top: 15px;
+    padding: 50px 80px;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+/*.account .myScore .scoreDisplay{*/
+    /*width: 240px;*/
+/*}*/
+.account .myScore .scoreDisplay > p{
+    font: bold 18px/100% "微软雅黑";
+}
+.account .myScore .scoreDisplay .scoreNum{
+    font-family: Arial;
+    font-size: 60px;
+}
+.account .myScore .scoreExplain{
+    display: inline-block;
+    text-align: center;
+    color: #888;
+    margin-top: 54px;
+}
+.account .myScore .gotoScoreRule{
+    margin-top: 54px;
+    display: inline-block;
+}
+.link-blue{
+    color: #008edc;
+}
+
+/*系统消息*/
+div.message{
+    padding: 20px;
+    background: #dededd;
+    margin: 38px auto 0;
+    width: 1106px;
+}
+.message .mesgList{
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    overflow: hidden;
+}
+.message .mesgList li{
+    margin-bottom: 14px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.message .mesgList li .mesgContent{
+    width: 968px;
+    height: 88px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.message .mesgList li .mesgTxt{
+    width: 654px;
+    height: 88px;
+    /*padding: 34px 56px;*/
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 88px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+.message .mesgList li .mesgDatetime{
+    width: auto;
+    height: 20px;
+    padding: 34px 56px;
+    display: inline-block;
+}
+.message .mesgList li .mesgSelect{
+    position: absolute;
+    right: 24px;
+    top: 35%;
+}
+.message .mesgList li .mesgSelect label{
+    cursor: pointer;
+    font-size: 16px;
+}
+.message .mesgList li .mesgSelect i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+    background: url(../imgs/sprites_0.png) -444px -46px no-repeat;
+}
+.message .mesgList li .mesgSelect i.checked{
+    background-position: -444px -74px;
+}
+.message .mesgList li .mesgContent.mesg_1{
+    height: auto;
+}
+div.mesgContent > p:first-child {
+    transition: height .3s linear;
+}
+.message .mesgList li .mesgContent .mesg_2{
+    line-height: 40px;
+    height: 120px;
+    padding: 34px 56px;
+}
+
+
+/*弹出框*/
+.maskLayer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(100, 95, 96, 0.22);
+    display: none;
+}
+.maskLayer > div {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateY(-50%) translateX(-50%) ;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.maskLayer > div > h2{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.maskLayer > div > p:nth-child(3){
+    margin-top: 20px;
+    text-align: center;
+}
+.maskLayer > div > p:nth-child(2){
+   margin: 40px 0;
+}
+.maskLayer > div > p:nth-child(3) > button{
+   width: 160px;
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #838281;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+.maskLayer > div > p:nth-child(3) > button:hover{
+    background: #82c353;
+}
+.sureDeleThisOrder{
+    margin-right: 20px;
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+    background: #f0f2f3;
+    margin-top: 72px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*显隐*/
+div.order,div.sell{
+   padding: 0;
+}
+.pesnInfo .person ,.pesnInfo .order ,.pesnInfo .sell,.pesnInfo .account,.pesnInfo .message{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

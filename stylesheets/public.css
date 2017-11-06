@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body, ul, li, nav,h1,h2,h3,h4,h5,h6,p,section,input { margin: 0; padding: 0;}
+a  { text-decoration: none; }
+ul { list-style: none; }
+
+.fl { float: left; }
+.fr { float: right; }
+.clearFloat { zoom: 1; }
+.clearFloat:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.flex-center { display: flex; display: -webkit-flex; justify-content: center; align-items: center; }
+.flex { display: flex; display: -webkit-flex; justify-content: center; align-items: center; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

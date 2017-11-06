@@ -1,0 +1,36 @@
+{
+"conmodity":[
+  {"img":"imgs/example_0.jpg","title":"真皮沙发","price":"￥580", "reduce":"￥480","type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"},
+  {"img":"imgs/example_0.jpg","title":"商品名称","price":"￥60323", "reduce":"￥59323","type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"},
+  {"img":"imgs/example_0.jpg","title":"商品名称","price":"￥5346", "reduce":"","type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"},
+  {"img":"imgs/example_0.jpg","title":"商品名称","price":"￥53672", "reduce":"","type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"},
+  {"img":"imgs/example_0.jpg","title":"商品名称","price":"￥3562", "reduce":"","type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"},
+  {"img":"imgs/example_0.jpg","title":"商品名称","price":"￥24562", "reduce":"","type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"},
+  {"img":"imgs/example_0.jpg","title":"商品名称","price":"￥62547", "reduce":"","type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"},
+  {"img":"imgs/example_0.jpg","title":"商品名称","price":"￥23546", "reduce":"","type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"}
+],
+  "max":["../imgs/example_10.jpg","../imgs/example_9.jpg","../imgs/example_8.jpg","../imgs/example_7.jpg","../imgs/example_6.jpg"],
+  "min":["../imgs/example_10_thumbnail.jpg","../imgs/example_9_thumbnail.jpg","../imgs/example_8_thumbnail.jpg","../imgs/example_7_thumbnail.jpg","../imgs/example_6_thumbnail.jpg"],
+  "goodsnav":[
+    {
+      "className":"沙发 SOFAS",
+      "objectData":["全部","单人位","双人位","三人位","休闲沙发","转角沙发"]
+    },
+    {
+      "className":"桌椅 TABLES/CHAIRS",
+      "objectData":["全部","餐桌","书桌","电脑桌","梳妆台","餐椅","凳子","休闲椅","户外椅","其它"]
+    },
+    {
+      "className":"床 BEDS",
+      "objectData":["全部","1.5M床","1.8M床","其它"]
+    },
+    {
+      "className":"柜 SOFAS",
+      "objectData":["全部","衣柜","储物柜","电视柜","书柜","鞋柜","床头柜","其它"]
+    },
+    {
+      "className":"更多 MORE",
+      "objectData":["全部","组合产品","日用家居","家居饰品","其它"]
+    }
+  ]
+}

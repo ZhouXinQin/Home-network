@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="author" content="氡屾"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheets/public.css">
+    <link rel="stylesheet" href="../stylesheets/header&footer.css">
+    <link rel="stylesheet" href="../stylesheets/login&register.css">
+</head>
+<body>
+
+
+<header></header>
+
+<main>
+   <div class="logRegBox">
+       <!--登录界面-->
+       <login-page>
+           <h1>登&nbsp;&nbsp;&nbsp;&nbsp;录</h1>
+           <div class="register-item">
+               还不是我们的会员？
+               <a href="javascript:;">注册</a>
+           </div>
+           <div class="login-box">
+               <form action="" name="loginForm">
+                   <div>
+                       <label>账号</label><br>
+                       <input type="text" placeholder="用户注册邮箱号" id="loginAct">
+                   </div>
+                   <div>
+                       <label>密码</label><br>
+                       <input type="password" id="loginPsd">
+                   </div>
+                   <p>
+                       <a href="javascript:;">忘记密码?</a>
+                   </p>
+                   <div>
+                       <button type="button" id="loginBtn">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                   </div>
+               </form>
+           </div>
+       </login-page>
+       <!--注册界面-->
+       <register-page>
+           <h1>注&nbsp;&nbsp;&nbsp;&nbsp;册</h1>
+           <div class="login-item">
+               已经是我们的会员？
+               <a href="javascript:;">登录</a>
+           </div>
+           <div class="register-box">
+               <form action="" name="registerForm">
+                   <div>
+                       <label>注册账号</label><br>
+                       <input type="text" placeholder="用户注册邮箱号" id="registerAct" name="regAccount" required>
+                   </div>
+                   <div>
+                       <label>登录密码</label><br>
+                       <input type="password" id="registerPsd" name="regPassword" placeholder="6-16位的字符（除换行、空格、Tab键）" required>
+                   </div>
+                   <div>
+                       <label>确认密码</label><br>
+                       <input type="password" id="affirmPsd" required name="affPassword">
+                   </div>
+                   <div>
+                       <button type="button" id="register-btn" disabled>注&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+                   </div>
+               </form>
+           </div>
+       </register-page>
+   </div>
+</main>
+
+<footer></footer>
+
+<script type="text/javascript" src="../javascript/tools.js"></script>
+<script type="text/javascript" src="../jquery/jquery.js"></script>
+<script type="text/javascript" src="../javascript/header&footer.js"></script>
+<script type="text/javascript" src="../javascript/login&register.js"></script>
+</body>
+</html>

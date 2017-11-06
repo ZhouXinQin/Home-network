@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详细页面</title>
+    <link rel="stylesheet" href="../stylesheets/goodsInfo.css">
+    <link rel="stylesheet" href="../stylesheets/header&footer.css">
+    <link rel="stylesheet" href="../stylesheets/public.css">
+</head>
+<body>
+<article>
+    <header></header>
+    <main>
+        <div class="content">
+            <section>
+                <!--商品展示-->
+                <section class="goodsShowImg">
+                    <!--主展示图-->
+                    <div class="imgbox-show">
+                        <ul>
+                            <li ></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class="showing"></li>
+                        </ul>
+                    </div>
+                    <!--缩略图列表-->
+                    <div class="goodstyle thumbnail">
+                        <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="selected"></li>
+                    </ul>
+                    </div>
+                </section>
+                <!--购买信息-->
+                <section class="goodsBuy">
+                    <!--商品名称-->
+                    <div class="goodsName">
+                        <h1>沙发</h1>
+                        <p>
+                            <span class="genre">三人位</span>
+                            <span class="novel">9成新以上</span>
+                        </p>
+                    </div>
+                    <!--商品价格-->
+                    <div class="goodsprice">
+                        <!--原始价格-->
+                        <div class="origPrice">
+                            <span class="rmbSign">￥</span>
+                            <span class="rmbNum">680</span>
+                            <span class="rmbYuan">元</span>
+                            <span class="deleOldPrice"></span>
+                        </div>
+                        <!--新价格-->
+                        <div class="newPrice">
+                            <span class="rmbSign">￥</span>
+                            <span class="rmbNum">580</span>
+                            <span class="rmbYuan">元</span>
+                            <span class="deleOldPrice"></span>
+                        </div>
+                    </div>
+                    <!--购买动态信息-->
+                    <div class="goodsDynamic goodstyle">
+                        <p class="origBuyPrice">
+                            <label>原始购买价格：</label>
+                            <span>2558</span> 元
+                        </p>
+                        <p class="score">
+                            <label>积分 : </label>
+                            <span>6.8</span>
+                            <a href="#">了解积分规则</a>
+                        </p>
+                        <p class="inventory">
+                            <label>库存 : </label>
+                            <span>5</span>
+                        </p>
+                    </div>
+                    <!--购买操作-->
+                    <div class="goodstyle goodsBuyCtrl">
+                        <!--数量设置-->
+                        <form name="shoping">
+                            <div class="countSet">
+                                <input type="text" name="" id="" value="0">
+                                <div class="countSetArea">
+                                    <button class="plus" type="button">+</button>
+                                    <button class="minus disabled" disabled type="button">-</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <button type="button" class="immedBuy">立即购买</button>
+                        <button type="button" id="joinshop">加入购物车</button>
+                    </div>
+                    <!--在线服务-->
+                    <div class="onlineServer">
+                        <button type="button"></button>
+                    </div>
+                    <!--户里服务-->
+                    <div class="huliServer">
+                        <p>
+                            <label>户里服务 :</label>
+                            <span>
+                                该商品在仓库，23点前完成下单可在后天（5月15日）送达/该商品在用户家中，23点前完成下单，可在（5天后）送达
+                            </span>
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <!--商品规格-->
+            <section class="goodstyle goodsSize">
+                <h1 class="classifyHeader">商品规格</h1>
+                <div>
+                    <label for="">尺寸 &nbsp: </label>
+                    <span  class="dimension">1260*760*560mm</span>
+                </div>
+                <div>
+                    <label for="">材料 &nbsp:</label>
+                    <span class="science">实木/布艺</span>
+                </div>
+                <div>
+                    <label for="">颜色 &nbsp:</label>
+                    <span class="dyeing">亚麻色</span>
+                </div>
+            </section>
+            <!--商品详情-->
+            <section class="goodstyle">
+                <h1 class="classifyHeader">商品详情</h1>
+                <div class="detailsContent"></div>
+            </section>
+            <!--送货-->
+            <section class="goodstyle">
+                <h1 class="classifyHeader">送货</h1>
+                <div>成都市绕城内满699元可享受免费送货政策，未满金额或者绕城外地区收取99元运费。</div>
+            </section>
+            <!--推荐商品-->
+            <section class="goodstyle">
+                <h1 class="classifyHeader">推荐商品</h1>
+                <ul class="recomList">
+                    <li>
+                        <div class="goodsImg"><img src="../imgs/example_0.jpg" alt=""></div>
+                        <div class="goodsBaseInfo" >
+                            <p>商品名称</p>
+                            <p>
+                                <span class="copyoldprice">
+                                    <span>￥60323</span>
+                                    <span class="deleOldPrice"></span>
+                                </span>
+                                <span class="copynewPrice">
+                                    <span>￥59323</span>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goodsImg"><img src="../imgs/6.jpg" alt=""></div>
+                        <div class="goodsBaseInfo" >
+                            <p>商品名称</p>
+                            <p>
+                                <span class="copyoldprice">
+                                    <span>￥60323</span>
+                                    <span class="deleOldPrice"></span>
+                                </span>
+                                <!--<span class="copynewPrice">-->
+                                    <!--<span>￥59323</span>-->
+                                <!--</span>-->
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goodsImg"><img src="../imgs/0.jpg" alt=""></div>
+                        <div class="goodsBaseInfo" >
+                            <p>商品名称</p>
+                            <p>
+                                <span class="copyoldprice">
+                                    <span>￥60323</span>
+                                    <span class="deleOldPrice"></span>
+                                </span>
+                                <span class="copynewPrice">
+                                    <span>￥59323</span>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</article>
+<script src="../jquery/jquery.js"></script>
+<script src="../javascript/header&footer.js"></script>
+<script src="../javascript/goodsDetails.js"></script>
+</body>
+</html>

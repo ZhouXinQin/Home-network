@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="../stylesheets/header&footer.css">
+    <link type="text/css" href="../stylesheets/personalCenter.css" rel="stylesheet">
+</head>
+<body>
+<!--header-->
+<header></header>
+<!--content-->
+<main class="content">
+    <!-- 个人信息查看及设置 { -->
+    <section class="pesnInfo">
+        <!-- 个人信息——板块选择 { -->
+        <div class="pesnInfo-choose">
+            <ul>
+                <li><a class="checked">个人信息</a></li>
+                <li><a>我的订单</a></li>
+                <li><a>我的出售</a></li>
+                <li><a>个人账户</a></li>
+                <li><a>系统消息</a>
+                    <i class="math">4</i>
+                </li>
+            </ul>
+        </div>
+        <!-- 个人信息——板块选择 }-->
+    <!-- 个人信息设置 { -->
+        <article>
+            <div class="pesnInfo-set person">
+                <form name="userInfo">
+                    <div>
+                        <label>联系人</label>
+                        <input type="text" placeholder="姓名" class="w-132">
+                        <input type="text" placeholder="电话号码" class="w-256">
+                    </div>
+                    <div>
+                        <label>性别</label>
+                        <p class="sexSelect">
+                            <input type="radio" value="0" checked name="fale">
+                            <i class="rdo-checked_custom"></i>
+                            <label>男</label>
+                        </p>
+                        <p class="sexSelect ml-46">
+                            <input type="radio" value="0"  name="fale">
+                            <i class="rdo_custom"></i>
+                            <label>女</label>
+                        </p>
+                    </div>
+                    <div>
+                        <label>生日</label>
+                      <ul class="year">
+                          <li title="2017">
+                              <span>2017</span>
+                              <i></i>
+                          <ul>
+                              <li title="1910">1910</li>
+                              <li title="1911">1911</li>
+                              <li title="1912">1912</li>
+                              <li title="1913">1913</li>
+                              <li title="1914">1914</li>
+                              <li title="1915">1915</li>
+                              <li title="1916">1916</li>
+                              <li title="...">...</li>
+                              <li title="2000">2000</li>
+                              <li title="2001">2001</li>
+                              <li title="2002">2002</li>
+                          </ul></li>
+                      </ul>
+                        <ul class="month">
+                          <li title="1">
+                              <span>1</span>
+                              <i></i>
+                          <ul >
+                              <li title="2">2</li>
+                              <li title="3">3</li>
+                              <li title="4">4</li>
+                              <li title="5">5</li>
+                              <li title="6">6</li>
+                              <li title="7">7</li>
+                              <li title="8">8</li>
+                              <li title="9">9</li>
+                              <li title="10">10</li>
+                              <li title="11">11</li>
+                              <li title="12">12</li>
+                          </ul>
+                          </li>
+                      </ul>
+                        <ul class="day">
+                          <li title="1">
+                              <span>1</span>
+                              <i></i>
+                          <ul >
+                              <li title="2">2</li>
+                              <li title="3">3</li>
+                              <li title="4">4</li>
+                              <li title="5">5</li>
+                              <li title="6">6</li>
+                              <li title="7">7</li>
+                              <li title="8">8</li>
+                              <li title="...">...</li>
+                              <li title="28">28</li>
+                              <li title="29">29</li>
+                              <li title="30">30</li>
+                          </ul>
+                          </li>
+                      </ul>
+                    </div>
+                    <div>
+                        <label>家居偏好</label>
+                        <ul class="home">
+                            <li title="现代简约">
+                                <span>现代简约</span>
+                                <i></i>
+                                <ul>
+                                    <li title="现代简约">现代简约</li>
+                                    <li title="恬淡田园">恬淡田园</li>
+                                    <li title="现代中式">现代中式</li>
+                                    <li title="东南亚风格">东南亚风格</li>
+                                    <li title="欧式古典">欧式古典</li>
+                                    <li title="地中海">地中海</li>
+                                    <li title="美式乡村">美式乡村</li>
+                                    <li title="美式古典">美式古典</li>
+                                    <li title="时尚混搭">时尚混搭</li>
+                                    <li title="其它">其它</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <label>教育程度</label>
+                        <ul class="education">
+                            <li title="初中">
+                                <span>初中</span>
+                                <i></i>
+                                <ul>
+                                    <li title="初中">初中</li>
+                                    <li title="高中">高中</li>
+                                    <li title="大专">大专</li>
+                                    <li title="本科">本科</li>
+                                    <li title="硕士">硕士</li>
+                                    <li title="博士">博士</li>
+                                    <li title="其他">其他</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <label>所在行业</label>
+                        <ul class="industry">
+                            <li title="机构组织">
+                                <span>机构组织</span>
+                                <i></i>
+                                <ul>
+                                    <li title="机构组织">机构组织</li>
+                                    <li title="农林牧渔">农林牧渔</li>
+                                    <li title="医药卫生">医药卫生</li>
+                                    <li title="建筑建材">建筑建材</li>
+                                    <li title="冶金矿产">冶金矿产</li>
+                                    <li title="石油化工">石油化工</li>
+                                    <li title="信息产业">信息产业</li>
+                                    <li title="交通运输">交通运输</li>
+                                    <li title="信息产业">信息产业</li>
+                                    <li title="其它">其它</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <label>所在地区</label>
+                        <ul class="province">
+                            <li title="四川">
+                                <span class="a">四川</span>
+                                <i></i>
+                                <ul>
+                                    <li title="四川">四川</li>
+                                    <li title="北京">北京</li>
+                                    <li title="上海">上海</li>
+                                    <li title="深圳">深圳</li>
+                                    <li title="其他省份">其他省份</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="city">
+                            <li title="成都市">
+                                <span class="a">成都市</span>
+                                <i></i>
+                                <ul>
+                                    <li title="成都市">成都市</li>
+                                    <li title="达州市">达州市</li>
+                                    <li title="南充市">南充市</li>
+                                    <li title="德阳市">德阳市</li>
+                                    <li title="其他城市">其他城市</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="region">
+                            <li title="锦江区">
+                                <span class="a">锦江区</span>
+                                <i></i>
+                                <ul>
+                                    <li title="锦江区">锦江区</li>
+                                    <li title="金牛区">金牛区</li>
+                                    <li title="武侯区">武侯区</li>
+                                    <li title="高新区">高新区</li>
+                                    <li title="其他区">其他区</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="position">
+                            <li title="三环以内">
+                                <span class="a">三环以内</span>
+                                <i></i>
+                                <ul>
+                                    <li title="三环以内">三环以内</li>
+                                    <li title="绕城西">绕城西</li>
+                                    <li title="绕城东">绕城东</li>
+                                    <li title="绕城南">绕城南</li>
+                                    <li title="其他">其他</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>
+                            <input type="text" placeholder="街道门牌号" class="w-557 mt-10">
+                        </p>
+                    </div>
+                    <div class="mt-80">
+                        <button type="button" class="pesnInfo_btn" disabled>提交</button>
+                    </div>
+                </form>
+            </div>
+        <!-- 个人信息设置 } -->
+            <!--我的订单{-->
+            <div class="pesnInfo-set order">
+                <table class="base_table w-1080 mt-38 order_baseCtrl">
+                    <thead>
+                        <tr>
+                            <th>订单信息</th>
+                            <th>金额</th>
+                            <th>下单时间</th>
+                            <th>送货时间</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+               <!--js动态生成数据-->
+                    </tbody>
+                </table>
+                <div class="mt-80">
+                    <button type="button" class="pesnInfo_btn" disabled>返回</button>
+                </div>
+            </div>
+            <!--我的订单}-->
+            <!--我要出售{-->
+            <div class="pesnInfo-set sell">
+                <table class="base_table w-1080 mt-38 order_baseCtrl">
+                    <thead>
+                       <tr>
+                           <th>订单信息</th>
+                           <th>售卖金额</th>
+                           <th>提交时间</th>
+                           <th>上架时间</th>
+                           <th>商品存储</th>
+                           <th>商品状态</th>
+                           <th>是否回款</th>
+                           <th>操作</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                 <!--js数据加载-->
+                    </tbody>
+                </table>
+                <div class="mt-80">
+                    <button type="button" class="pesnInfo_btn" disabled>我要出售</button>
+                </div>
+            </div>
+            <!--我要出售}-->
+            <!--个人账户{-->
+            <div class="pesnInfo-set account">
+                <h1>个人账户</h1>
+                <div class="myScore white-bg">
+                    <div class="scoreDisplay">
+                        <p>我的积分</p>
+                        <div>
+                            <span class="scoreNum">200</span>
+                            <span>分</span>
+                        </div>
+                    </div>
+                    <div class="scoreExplain">
+                        <p>您在户里网的任意消费都可获得积分，积分可直接抵扣商品金额</p>
+                    </div>
+                    <div class="gotoScoreRule">
+                        <p>
+                            <span>查看</span>
+                            <a href="###" class="link-blue">积分规则</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!--个人账户}-->
+            <!-- 系统消息 { -->
+            <div class="pesnInfo-set message">
+            <h1>系统消息</h1>
+            <ul class="mesgList">
+                <li>
+                    <div class="mesgContent">
+                        <p class="mesgTxt">在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。</p>
+                        <p class="mesgDatetime">2015-8-11 22:48:26</p>
+                    </div>
+                    <div class="mesgSelect">
+                        <label>
+                            <i class="selector"></i>
+                            <span>标记</span>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="mesgContent">
+                        <p class="mesgTxt">在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。</p>
+                        <p class="mesgDatetime">2015-8-11 22:48:26</p>
+                    </div>
+                    <div class="mesgSelect">
+                        <label>
+                            <i class="selector"></i>
+                            <span>标记</span>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="mesgContent">
+                        <p class="mesgTxt">在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。</p>
+                        <p class="mesgDatetime">2015-8-11 22:48:26</p>
+                    </div>
+                    <div class="mesgSelect">
+                        <label>
+                            <i class="selector"></i>
+                            <span>标记</span>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="mesgContent">
+                        <p class="mesgTxt">在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。</p>
+                        <p class="mesgDatetime">2015-8-11 22:48:26</p>
+                    </div>
+                    <div class="mesgSelect">
+                        <label>
+                            <i class="selector"></i>
+                            <span>标记</span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="mt-80">
+                <button type="button" class="pesnInfo_btn" >删除</button>
+            </div>
+        </div>
+        </article>
+        <!-- 系统消息 } -->
+    </section>
+    <!-- 个人信息查看及设置 } -->
+</main>
+<!--footer-->
+<footer></footer>
+
+
+<!--弹出框-->
+<div class="maskLayer"></div>
+<script src="../jquery/jquery.js" type="text/javascript"></script>
+<script src="../javascript/header&footer.js" type="text/javascript"></script>
+<script src="../javascript/personalCenter.js" type="text/javascript"></script>
+</body>
+</html>

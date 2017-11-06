@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+main {
+    width: 100%;
+    height: 1770px;
+}
+main > div.content-banner {
+    width: 1190px;
+    height: 245px;
+    margin: 50px auto 0 auto;
+    position: relative;
+    background: url("../imgs/classifyBanner_1190dpi.jpg") no-repeat center center;
+    background-size: cover;
+}
+main > div.content-banner > h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+main > div.content-banner > div {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+main > div.content-banner > div > a {
+    display: inline-block;
+    height: 40px;
+    background: dimgray;
+    color: white;
+    border-radius: 5px;
+    padding: 0 3px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+main > div.content-banner > div > a:hover {
+    background: rgba(0, 128, 0, 0.71);
+}
+div.content-menu {
+    width: 1190px;
+    height: 65px;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid gray;
+}
+div.content-menu > div {
+    width: 128px;
+    height: auto;
+    margin-right: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+div.content-menu > div > a {
+    display: inline-block;
+    width: 98px;
+    height: 62px;
+    margin-left: 15px;
+    text-align:center;
+    font: normal normal 20px/62px '宋体';
+    color: black;
+    cursor: pointer;
+}
+div.content-menu > div > ul {
+    width: 128px;
+    position: relative;
+    left: -1px;
+    top: 1px;
+    display: none;
+    box-sizing: border-box;
+}
+div.content-menu > div > ul > li {
+    width: 80%;
+    margin: 0 auto;
+    height: 45px;
+    text-align:center;
+    font: normal normal 20px/45px '宋体';
+    color: black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+div.pro-list {
+    width: 1190px;
+    height: 1390px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+div.pro-list > section {
+    width: 366px;
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow .3s linear;
+}
+div.pro-list > section:last-child {
+    position: relative;
+    top: 0;
+    left: -412px;
+}
+div.pro-list > section > a {
+    width: 366px;
+    height: 366px;
+}
+div.proBaseInfo {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+div.proBaseInfo > span {
+    padding: 0 10px;
+    font-weight: bold;
+}
+div.proBaseInfo > span:first-child {
+    font-size: 22px;
+}
+div.proBaseInfo > span:not(.proName) {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+div.proBaseInfo > span:nth-child(3) {
+    color: red;
+}
+/*删除线*/
+.delete {
+    text-decoration: line-through;
+}
+/*遮罩*/
+.mask {
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 128, 0, 0.24);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+
+div.pro-list > section:hover {
+    box-shadow: 0 0  3px 3px rgba(0, 128, 0, 0.45);
+}
+
+
+

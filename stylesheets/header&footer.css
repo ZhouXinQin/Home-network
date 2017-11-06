@@ -1,0 +1,407 @@
+@charset "UTF-8";
+body,html{
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 296px;
+    position: relative;
+}
+header > .header-main{
+    width: 1260px;
+    height: 296px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../imgs/bg_header.jpg") no-repeat center center;
+    background-size: cover;
+}
+a.contUs_mark{
+    width: 221px;
+    height: 53px;
+    background: url("../imgs/sprites_0.png") 0px -138px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.header-logo{
+    width: 286px;
+    height: 83px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+div.header-logo > a{
+    display: block;
+    width: 286px;
+    height: 83px;
+    background: url("../imgs/sprites_0.png") -2px -45px;
+}
+div.loginOrShop{
+    position: absolute;
+    right: 0;
+    top: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+a.login{
+    width: 105px;
+    height: 37px;
+    line-height: 37px;
+    color: #666;
+    background: url("../imgs/sprites_0.png") 230px -146px;
+}
+a.login:hover{
+    color: #de3d36;
+    text-decoration: underline;
+}
+div.loginOrShop > span{
+    width: 2px;
+    height: 36px;
+    background:gray;
+    margin-left: 10px;
+}
+a.shoppingCar{
+    margin-left: 10px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid transparent;
+    background: url("../imgs/sprites_0.png") -21px -423px;
+    position: relative;
+
+}
+span.pro-count{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 12px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+div.region_list{
+    box-sizing: border-box;
+    width:148px;
+    height: 36px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+}
+i.first-region{
+    display: inline-block;
+    width: 120px;
+    height: 100%;
+    margin-left: 6px;
+    text-align: left;
+    padding-left: 20px;
+    font: normal normal 16px/34px '宋体';
+    color: gray;
+    cursor: pointer;
+    background: url("../imgs/slt_0.png") no-repeat 95px 0;
+}
+ul.other-region{
+    box-sizing: border-box;
+    width:148px;
+    border: 1px solid gray;
+    border-top: none;
+    background-color: white;
+    position: relative;
+    left: -1px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+div.region_list > ul.other-region > li{
+    height: 36px;
+    text-align: center;
+    font: normal normal 16px/34px '宋体';
+    color: gray;
+    cursor: pointer;
+}
+div.header-nav{
+    width: 100%;
+    height: 54px;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+div.header-nav > ul{
+    width: 1260px;
+    height: 52px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+div.header-nav > ul > li{
+    width: auto;
+    height: 52px;
+    position: relative;
+    margin-right: 30px;
+    border-width: 1px;
+
+    border-left: 1px solid transparent;
+    border-right:1px solid transparent;
+    /*border-bottom: 1px solid transparent;*/
+}
+div.header-nav > ul > li > a{
+    height: 100%;
+    padding: 5px;
+    text-align: left;
+    line-height: 52px;
+    font-size: 20px;
+    color: gray;
+}
+ul.second-menu{
+    width:100%;
+    position: absolute;
+    left: -1px;
+    top: 52px;
+    z-index :1;
+    background-color : white;
+    display: none;
+}
+ul.second-menu > li{
+    width: 80%;
+    margin: 0 auto;;
+    display: flex;
+    justify-content: space-between;
+}
+ul.second-menu > li > a{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: gray;
+    padding: 1px 6px;
+}
+div.search-box{
+    width: auto;
+    height: 34px;
+    position : relative;
+    z-index : 1;
+}
+form > input{
+    width: 126px;
+    height: 34px;
+    outline: none;
+    position: relative;
+    font-size:18px;
+    top: 7px;
+    transition:box-shadow .2s linear;
+}
+div.search-box > i{
+    display : inline-block;
+    width: 34px;
+    height: 34px;
+    background: url("../imgs/sprites_0.png") -298px -43px;
+    position : absolute;
+    right : 0;
+    top : 25%;
+    z-index : 2;
+}
+
+/*header弹出框部分*/
+.treas_brief{
+    width: 198px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top:57px;
+    background: #ffffff;
+    z-index: 10;
+    display: none;
+}
+a.style_border{
+    z-index: 11;
+    border-width: 1px;
+    border-color: #ccc #ccc #fff #ccc;
+    border-style: solid;
+}
+.treas_brief-content{
+    width: 100%;
+    height:auto;
+    margin-bottom: 20px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #ccc;
+}
+.treas_brief-content >p{
+    width: 166px;
+    height: 25px;
+    font:normal 12px/25px "宋体";
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    margin: 0;
+}
+.treas_name{
+    width: 98px;
+    height: 25px;
+    display: inline-block;
+    overflow: hidden;
+    color: #999;
+}
+.treas_brief-content .treas_price{
+    width: 32px;
+    color: #ce9411;
+}
+.treas_count{
+    width: 21px;
+    color: #999;
+}
+.treas_price, .treas_brief-content .treas_count{
+    margin-left: 2px;
+    text-align: right;
+    display: inline-block;
+}
+.treas_name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #4375ad;
+}
+/*header弹出框部分查看购物车按钮*/
+.treas_brief-goto a{
+    width: 100%;
+    height: 40px;
+    display: block;
+    background: #da251d;
+    font:normal 15px/40px "微软雅黑";
+    text-align: center;
+    color: #fff;
+}
+.treas_brief-goto a:hover{
+    background: #ed4941;
+}
+/*footer部分*/
+footer{
+    width:100%;
+    height:451px;
+}
+footer > div.footer-slogan{
+    width : 100%;
+    height : 76px;
+    text-align : center;
+    font : normal normal 24px/76px '宋体';
+    color : white;
+    letter-spacing : 2px;
+    background : green;
+}
+footer > div.footer-purpose{
+    width : 1260px;
+    height : 145px;
+    display : flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 36px;
+}
+footer > div.footer-info{
+    width : 1260px;
+    height:120px;
+    margin:0 auto;
+    display :flex;
+    justify-content : space-between;
+}
+footer > div.footer-purpose > div{
+    width : 155px;
+    height:120px;
+    margin:0 auto;
+    display :flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer > div.footer-purpose > div > i{
+    background: url("../imgs/sprites_0.png") -345px -134px;
+    text-align: center;
+    font: normal 200 20px/97px '宋体';
+    color: white;
+    width: 84px;
+    height: 97px;
+}
+footer > div.footer-purpose > div > span{
+    width: 155px;
+    height: 14px;
+    text-align: center;
+    font: normal normal 13px/14px '宋体';
+    color: gray;
+}
+footer > div.footer-info > div{
+    font-size: 14px;
+}
+footer > div.footer-info > div > h2{
+    font: normal bold 16px '宋体';
+    margin-bottom: 10px;
+}
+footer > div.footer-info > div > p{
+    font-size: 12px;
+    color: gray;
+}
+div.attention_box{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+p.attention{
+    width: auto;
+    height: 27px;
+    line-height: 27px;
+}
+footer > div.footer-info > div > p > i{
+    display: inline-block;
+    width: 26px;
+    height: 27px;
+}
+footer > div.footer-info > div > p > span{
+    display: inline-block;
+    position: relative;
+    height: 27px;
+    top : -8px;
+}
+footer > div.footer-info > div:nth-child(5)  > p > i{
+    background: url("../imgs/sprites_0.png") -368px -47px;
+}
+footer > div.footer-info > div:last-child  > p > i{
+    background: url("../imgs/sprites_0.png") -368px -84px;
+}
+footer > div.footer-info > div > div{
+    width: 86px;
+    height: 86px;
+}
+footer > div.footer-info > div:nth-child(5) > div{
+    background: url("../imgs/sprites_0.png") -264px -231px;
+}
+footer > div.footer-info > div:last-child > div{
+    background: url("../imgs/sprites_0.png") -264px -231px;
+}
+footer > div.footer-info > div > p > a{
+    display: inline-block;
+    font-size: 12px;
+    color: gray;
+}
+div.copy-right{
+    width: 712px;
+    height: 38px;
+    margin: 0 auto;
+    text-align: center;
+    font:normal lighter 18px/38px '宋体';
+    color: white;
+    background: rgba(0, 128, 0, 0.59);
+}
